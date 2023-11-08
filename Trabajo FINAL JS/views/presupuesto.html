@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <title>Subscripción</title>
+</head>
+
+<body>
+    <header>
+        <div class="navegacion">
+            <div class="logo">
+                <a href="/index.html"><img src="/assets/images/logo2_1.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul class="lista">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Facts</a></li>
+                    <li><a class="activo" href="#">Subscripción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="contenedor">
+            <form action="formu.php" method="post" id="formulario" class="formulario" >
+                <fieldset class="form-control">
+                    <legend class="datos">Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>              
+                </fieldset>
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <div id="campos">
+                        <div>
+                            <label for="base">Tipo de Subscripción: </label>
+                            <select id="base">
+                                <option value="5">Revista mensual </option>
+                                <option value="10">Revista + Merchandising</option>
+                                <option value="15">Revista + Merchandising + Sorteos Exclusivos</option>
+                            </select>
+                        </div>
+                        
+                        <!--PLAZO EN MESES-->
+        
+                        <div>
+                            <label for="plazo">PLAZO EN MESES: </label>
+                            <input type="number" min="1" max="3" name="plazo" id="plazo" value="3" class="outline">
+                        </div>
+        
+                        <div id="extras">
+                            <h3>Extras</h3>
+                            <label for="noticiario">Noticiario via email</label>
+                            <input type="checkbox" value="2" name="noticiario" id="noticiario">
+        
+                            <label for="foro">Acceso a foro de debates</label>
+                            <input type="checkbox" value="4" name="foro" id="foro">
+        
+                            <label for="historico">Acceso a archivos históricos</label>
+                            <input type="checkbox" value="10" name="historico" id="historico">
+        
+                            <label for="informe">Descargas de informes</label>
+                            <input type="checkbox" value="7" name="informe" id="informe">
+                        </div>
+        
+                        <div>
+                            <label for="total">PRESUPUESTO ESTIMADO: </label>
+                            <input id="total" type="text" value="" class="outline">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Aceptación de Condiciones y envio de presupuesto</legend>
+                    <label for="privacidad">He leido la política de privacidad</label>
+                    <input type="checkbox" id="privacidad" name="privacidad">
+                    <br>
+                    <input class="colorgris" type="submit" value="Enviar Formulario" id="btn-formu">
+                    <input class="colorgris" type="reset" value="Borrar Formulario">
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/juanjojurado10" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/instagram.png" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/in/juan-jos%C3%A9-jurado-1a5948245" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/linkedin.png" alt="LinkedIn">
+              </a>
+              <a href="mailto:juradomagdalenojuanjose@gmail.com">
+                <img src="/assets/images/gmail.png" alt="Gmail">
+              </a>
+        </div>
+        <p>&copy; 2023 JuanjoDev - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/js/formulario.js"></script>
+</body>
+
+</html>

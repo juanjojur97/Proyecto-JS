@@ -1,0 +1,16 @@
+{
+  "noticias": [
+    {
+      "titulo": "Descubren nueva especie de mariposa en la Amazonía",
+      "descripcion": "Científicos encuentran una colorida mariposa, 'Morpho amazonica', en la selva amazónica."
+    },
+    {
+      "titulo": "Victoria del Jaén Paraíso Interior en la liga de fútbol sala",
+      "descripcion": "El equipo Jaén Paraíso Interior logra una importante victoria en el último partido de la liga de fútbol sala."
+    },
+    {
+      "titulo": "Crecimiento económico impulsado por la tecnología",
+      "descripcion": "El sector tecnológico contribuye al sólido crecimiento económico en el tercer trimestre."
+    }
+  ]
+}
